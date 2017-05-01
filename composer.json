@@ -1,0 +1,29 @@
+{
+	"name": "zeokat/flarum-ext-folinks",
+	"description": "Follow domain links.",
+	"type": "flarum-extension",
+	"keywords": ["flarum","links","follow","nofollow","seo"],
+	"version": "0.1.0",
+	"author": {
+		"name": "Zeokat"
+	},
+	"license": "MIT",
+	"require": {
+		"php": ">=5.4.0",
+		"flarum/core": "^0.1.0-beta.3"
+	},
+	"support": {
+		"source": "https://github.com/Zeokat/flarum-ext-folinks",
+		"issues": "https://github.com/Zeokat/flarum-ext-folinks/issues"
+	},
+	"extra": {
+		"flarum-extension": {
+			"title": "Follow Links",
+			"icon": {
+				"name": "follow-links",
+				"backgroundColor": "#cc181e",
+				"color": "#fff"
+			}
+		}
+	}
+}
