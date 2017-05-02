@@ -29,7 +29,16 @@ class FormatFollowAutolink
     public function configure(ConfigureFormatter $event)
     {
         $configurator = $event->configurator;
+        
+        $dom = $configurator->tags['URL']->template->asDOM();
 
+        foreach ($dom->getElementsByTagName('a') as $a) {
+            $a->removeAttribute('target', '_blank');
+            $a->removeAttribute('rel', 'nofollow');
+        }
+
+        $dom->saveChanges();
+        /*
         $tagName = 'USERMENTION';
 
         $tag = $configurator->tags->add($tagName);
@@ -43,6 +52,7 @@ class FormatFollowAutolink
             ->setJS('function() { return true; }');
 
         $configurator->Preg->match('/\B@(?<username>[a-z0-9_-]+)(?!#)/i', $tagName);
+        */
     }
 
     /**
@@ -59,19 +69,5 @@ class FormatFollowAutolink
     public function render(ConfigureFormatterRenderer $event)
     {
         //$event->renderer->setParameter('PROFILE_URL', $this->url->toRoute('user', ['username' => '']));
-    }
-
-    /**
-     * @param $tag
-     * @param UserRepository $users
-     * @return bool
-     */
-    public static function addId($tag, UserRepository $users)
-    {
-        if ($id = $users->getIdForUsername($tag->getAttribute('username'))) {
-            $tag->setAttribute('id', $id);
-
-            return true;
-        }
     }
 }
