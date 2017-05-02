@@ -33,8 +33,9 @@ class FormatFollowAutolink
         $dom = $configurator->tags['URL']->template->asDOM();
 
         foreach ($dom->getElementsByTagName('a') as $a) {
-            $a->removeAttribute('target', '_blank');
-            $a->removeAttribute('rel', 'nofollow');
+            $a->removeAttribute('target');
+            $a->removeAttribute('rel');
+            $a->setAttribute('testing', 'temp');
         }
 
         $dom->saveChanges();
