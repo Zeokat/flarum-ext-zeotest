@@ -14,7 +14,7 @@
 	},
 	"autoload": {
             "psr-4": {
-                "Zeokat\\Followautolink\\": "src/"
+                "Zeokat\\FollowAutolink\\": "src/"
             }
         },
 	"support": {
