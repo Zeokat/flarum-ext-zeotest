@@ -38,12 +38,9 @@ class FormatFollowAutolink
      */
     public function addFollowAutolinkFormatter(ConfigureFormatter $event)
     {
-        foreach (['CommitAutolink', 'IssueAutolink'] as $plugin) {
-            $name = "Github{$plugin}";
-            $event->configurator->plugins->set(
-                $name,
-                "Zeokat\\FollowAutolink\\TextFormatter\\Plugins\\{$name}\\Configurator"
-            );
-        }
+        $event->configurator->plugins->set(
+            'FollowInternalAutolink',
+            "Zeokat\\FollowAutolink\\TextFormatter\\Plugins\\FollowInternalAutolink\\Configurator"
+        );
     }
 }
