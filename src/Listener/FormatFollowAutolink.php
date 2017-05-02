@@ -50,7 +50,7 @@ class FormatFollowAutolink
      */
     public function parse(ConfigureFormatterParser $event)
     {
-        $event->parser->registeredVars['userRepository'] = $this->users;
+        //$event->parser->registeredVars['userRepository'] = $this->users;
     }
 
     /**
@@ -58,7 +58,7 @@ class FormatFollowAutolink
      */
     public function render(ConfigureFormatterRenderer $event)
     {
-        $event->renderer->setParameter('PROFILE_URL', $this->url->toRoute('user', ['username' => '']));
+        //$event->renderer->setParameter('PROFILE_URL', $this->url->toRoute('user', ['username' => '']));
     }
 
     /**
