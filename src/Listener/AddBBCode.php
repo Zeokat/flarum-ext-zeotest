@@ -19,17 +19,12 @@ class AddBBCode
     public function addBBCode(ConfigureFormatter $event)
     {
         $event->configurator->BBCodes->addCustom(
-            '[INTURL]{URL},{TEXT}[/INTURL]',
+            '[INTURL={URL}]{TEXT}[/INTURL]',
             '<a href="{URL}">{TEXT}</a>'
         );
         
         $event->configurator->BBCodes->addCustom(
-            '[INTURLB]{URL},{TEXT}[/INTURLB]',
-            '<a href="{URL}" target="_blank" rel="noopener noreferrer">{TEXT}</a>'
-        );
-        
-        $event->configurator->BBCodes->addCustom(
-            '[INTURLC={URL}]{TEXT}[/INTURLC]',
+            '[INTURLB={URL}]{TEXT}[/INTURLB]',
             '<a href="{URL}" target="_blank" rel="noopener noreferrer">{TEXT}</a>'
         );
     }
