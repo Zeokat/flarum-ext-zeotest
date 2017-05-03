@@ -2,8 +2,9 @@
 /*
  * (c) Zeokat
  */
- 
-use Zeokat\FollowAutolink\Listener;
+
+namespace oe800\FollowAutolink;
+
 use Illuminate\Contracts\Events\Dispatcher;
 
 return function (Dispatcher $events) {
