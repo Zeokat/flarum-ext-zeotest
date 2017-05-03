@@ -4,7 +4,6 @@
  * (c) Zeokat
  */
 
-
 namespace Zeokat\FollowAutolink\Listener;
 
 use Flarum\Event\ConfigureFormatter;
