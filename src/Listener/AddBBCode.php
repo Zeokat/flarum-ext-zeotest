@@ -27,5 +27,10 @@ class AddBBCode
             '[INTURLB]{URL},{TEXT}[/INTURLB]',
             '<a href="{URL}" target="_blank" rel="noopener noreferrer">{TEXT}</a>'
         );
+        
+        $event->configurator->BBCodes->addCustom(
+            '[INTURLC={URL}]{TEXT}[/INTURLC]',
+            '<a href="{URL}" target="_blank" rel="noopener noreferrer">{TEXT}</a>'
+        );
     }
 }
