@@ -3,7 +3,7 @@
  * (c) Zeokat
  */
 
-namespace oe800\FollowAutolink;
+namespace Zeokat\FollowAutolink;
 
 use Illuminate\Contracts\Events\Dispatcher;
 
