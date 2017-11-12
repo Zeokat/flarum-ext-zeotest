@@ -9,7 +9,7 @@ namespace Zeokat\AddOgData\Listener;
 use Flarum\Event\ConfigureFormatter;
 use Illuminate\Contracts\Events\Dispatcher;
 
-class AddBBCode
+class AddOgMetaData
 {
     public function subscribe(Dispatcher $events)
     {
