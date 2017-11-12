@@ -4,7 +4,7 @@
  * (c) Zeokat
  */
 
-namespace Zeokat\FollowAutolink\Listener;
+namespace Zeokat\AddOgData\Listener;
 
 use Flarum\Event\ConfigureFormatter;
 use Illuminate\Contracts\Events\Dispatcher;
