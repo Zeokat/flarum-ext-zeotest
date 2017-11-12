@@ -3,7 +3,7 @@
  * (c) Zeokat
  */
 
-namespace Zeokat\HeadStrings;
+namespace Zeokat\AddOgData;
 
 use Illuminate\Contracts\Events\Dispatcher;
 
