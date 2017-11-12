@@ -22,12 +22,8 @@ class AddOgMetaData
     public function addAssets(ConfigureClientView $event)
     {
         if ($event->isForum()) {
-            // Add google analytics if tracking UA has been configured.
-            if ($this->settings->get('flagrow.analytics.statusGoogle') && $this->settings->get('flagrow.analytics.googleTrackingCode')) {
-                $rawJs = file_get_contents(realpath(__DIR__ . '/../../assets/js/google-analytics.js'));
-                $js    = str_replace("%%TRACKING_CODE%%", $this->settings->get('flagrow.analytics.googleTrackingCode'), $rawJs);
-                $event->view->addHeadString($js);
-            }
+            $ogdata = '<meta property="og:site_name" content="foro.vozidea.com" />';
+            $event->view->addHeadString($ogdata);
         }
     }
 }
