@@ -1,8 +1,8 @@
 {
-	"name": "zeokat/flarum-ext-folinks",
-	"description": "Follow domain links.",
+	"name": "zeokat/flarum-ext-zeotest",
+	"description": "Developing testing extension.",
 	"type": "flarum-extension",
-	"keywords": ["flarum","links","follow","nofollow","seo"],
+	"keywords": ["flarum","links","test","nofollow","junk"],
 	"author": {
 		"name": "Zeokat"
 	},
@@ -13,18 +13,18 @@
 	},
 	"autoload": {
             "psr-4": {
-                "Zeokat\\FollowAutolink\\": "src/"
+                "Zeokat\\AddOgData\\": "src/"
             }
         },
 	"support": {
-		"source": "https://github.com/Zeokat/flarum-ext-folinks",
-		"issues": "https://github.com/Zeokat/flarum-ext-folinks/issues"
+		"source": "https://github.com/Zeokat/flarum-ext-zeotest",
+		"issues": "https://github.com/Zeokat/flarum-ext-zeotest/issues"
 	},
 	"extra": {
 		"flarum-extension": {
-			"title": "Follow Links",
+			"title": "Zeotest dev extension",
 			"icon": {
-				"name": "follow-links",
+				"name": "dev-zeoextension",
 				"backgroundColor": "#cc181e",
 				"color": "#fff"
 			}
