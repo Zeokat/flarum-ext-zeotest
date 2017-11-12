@@ -1,1 +1,1 @@
-# flarum-ext-folinks
+# flarum-ext-zeotest
