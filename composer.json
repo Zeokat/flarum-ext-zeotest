@@ -2,18 +2,17 @@
 	"name": "zeokat/flarum-ext-zeotest",
 	"description": "Developing testing extension.",
 	"type": "flarum-extension",
-	"keywords": ["flarum","links","test","nofollow","junk"],
+	"keywords": ["flarum","test","junk"],
 	"author": {
 		"name": "Zeokat"
 	},
 	"license": "MIT",
 	"require": {
-		"php": ">=5.4.0",
-		"flarum/core": "^0.1.0-beta.3"
+		"flarum/core": "^0.1.0-beta.8"
 	},
 	"autoload": {
             "psr-4": {
-                "Zeokat\\AddOgData\\": "src/"
+                "Zeokat\\AddScriptGA\\": "src/"
             }
         },
 	"support": {
